@@ -1,0 +1,11 @@
+from colorama import *
+
+init()
+
+print(Fore.RED + 'hello world' + Style.RESET_ALL)
+
+print(Style.BRIGHT + 'hello world' + Style.RESET_ALL)
+
+print(Back.GREEN + 'hello world' + Style.RESET_ALL)
+
+print(Style.BRIGHT + Back.GREEN + 'hello world')
