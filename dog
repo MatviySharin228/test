@@ -1,0 +1,25 @@
+class Dog:
+    def __init__(self, name):
+        self.name = name
+        self.owner = None
+
+    def play(self):
+        print("собака играется")
+
+
+class Human:
+    def __init__(self, name):
+        self.name = name
+        self.Dog = None
+
+    def playWithDog(self):
+        if self.Dog:
+            print("Человек играет с собакой")
+            self.Dog.play()
+
+
+Maxim = Human("Maxim")
+Dog = Dog("Sharik")
+
+Maxim.dog = Dog
+Dog.owner = Maxim
