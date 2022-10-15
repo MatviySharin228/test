@@ -1,0 +1,12 @@
+import random
+
+
+def random_color():
+  yield random.choice(["red", "blue", "green"])
+  
+l = [random_color(), random_color(), random_color()]
+
+it = iter(l)
+print(next(it))
+print(next(it))
+print(next(it))
